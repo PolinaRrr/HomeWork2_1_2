@@ -1,5 +1,4 @@
 
-
 public class DaysOfWeek {
     public enum DayOfWeek {
         MONDAY,
@@ -17,6 +16,11 @@ public class DaysOfWeek {
         System.out.println(getWorkingHours(DayOfWeek.SUNDAY));
     }
 
+    /**
+     * Метод возвращает строку, в которой содержится информация о количество оставшихся часов
+     * @param dayOfWeek день недели
+     * @return информационную строку
+     */
     public static String getWorkingHours(DayOfWeek dayOfWeek) {
         switch (dayOfWeek) {
             case MONDAY:
